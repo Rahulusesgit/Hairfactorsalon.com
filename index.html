@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Factor Unisex Salon | Premium Salon · Begumpet, Hyderabad</title>
+    <meta name="description" content="Begumpet's most trusted unisex salon — keratin treatments, hair coloring, beauty services & spa. 4.8★ by 890+ clients. Book your appointment online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-cursor="default">
+    <div class="noise-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Comb Cursor -->
+    <div class="cursor-comb" id="cursorComb">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="combGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="100%" stop-color="#cccccc"/>
+                </linearGradient>
+            </defs>
+            <rect x="3" y="1" width="30" height="9" rx="4" fill="url(#combGrad)" opacity="0.95"/>
+            <rect x="3" y="1" width="30" height="9" rx="4" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+            <rect x="6" y="10" width="2" height="11" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="10.5" y="10" width="2" height="14" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="15" y="10" width="2" height="12" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="19.5" y="10" width="2" height="15" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="24" y="10" width="2" height="13" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="28.5" y="10" width="2" height="10" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+        </svg>
+    </div>
+
+    <!-- ══════ FLOATING GLASS NAVBAR ══════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand" data-cursor-interact>
+                <img src="assets/images/logo.jpg" alt="Hair Factor Unisex Salon" class="nav-logo">
+                <div class="nav-brand-text">
+                    <div class="brand-name">HAIR <span>FACTOR</span></div>
+                    <div class="brand-sub">UNISEX SALON</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active" data-cursor-interact>Home</a>
+                <a href="#transformation" data-cursor-interact>Results</a>
+                <a href="#menu" data-cursor-interact>Prices</a>
+                <a href="#team" data-cursor-interact>Team</a>
+                <a href="#reviews" data-cursor-interact>Reviews</a>
+                <a href="#booking" class="nav-book" data-cursor-interact>Book Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" data-cursor-interact>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#transformation" class="drawer-link">Results</a>
+        <a href="#menu" class="drawer-link">Prices</a>
+        <a href="#team" class="drawer-link">Team</a>
+        <a href="#reviews" class="drawer-link">Reviews</a>
+        <a href="#booking" class="drawer-link drawer-cta">Book Appointment</a>
+        <div class="drawer-phone">
+            <p>Call us directly:</p>
+            <a href="tel:+919618361142">+91 96183 61142</a>
+        </div>
+    </div>
+
+    <!-- ══════ HERO ══════ -->
+    <section class="hero" id="home">
+        <!-- Left: Text Side -->
+        <div class="hero-text">
+            <div class="hero-sunbeam" aria-hidden="true"></div>
+            <div class="hero-watermark">HAIR FACTOR</div>
+
+            <span class="hero-eyebrow anim-up">Begumpet, Hyderabad</span>
+
+            <h1 class="hero-h1 anim-up d1">
+                Hair Factor<br><em id="typewriter" class="editorial-pulse">Unisex Salon.</em>
+            </h1>
+
+            <p class="hero-p anim-up d2">
+                Step into Begumpet's premier unisex sanctuary where master artistry meets precision hairdressing, beauty treatments & rejuvenating spa care.
+            </p>
+
+            <div class="anim-up d3" style="margin-bottom:2.5rem;">
+                <a href="#booking" class="btn-primary" data-cursor-interact>
+                    Book Appointment
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="tel:+919618361142" class="btn-outline" data-cursor-interact style="margin-left:.75rem;">Call 96183 61142</a>
+            </div>
+
+            <div class="hero-stats anim-up d4">
+                <div class="hero-stat"><span class="val">4.8</span><span class="lab">Google Rating</span></div>
+                <div class="hero-stat"><span class="val">890+</span><span class="lab">Client Reviews</span></div>
+                <div class="hero-stat"><span class="val">Open Daily</span><span class="lab">Until 8 PM</span></div>
+            </div>
+        </div>
+
+        <!-- Right: Full Bleed Visual -->
+        <div class="hero-visual anim-up d2">
+            <img src="assets/images/salon_interior_real.jpg" alt="Hair Factor Unisex Salon — real salon interior with styling stations and wash basins" loading="eager">
+
+            <div class="hero-badge" data-cursor-interact>
+                <div class="badge-stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div><strong>4.8 Rated</strong><small>890+ Google Reviews</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating upcoming badge (outside hero) -->
+    <div class="upcoming-badge hidden" id="upcomingBadge">
+        <span class="ub-pulse"></span>
+        <div class="ub-body">
+            <p id="badgeText"></p>
+            <button id="cancelBadgeBtn" class="ub-cancel" data-cursor-interact>Cancel</button>
+        </div>
+    </div>
+
+    <!-- ══════ BEFORE / AFTER TRANSFORMATION ══════ -->
+    <section class="transform-section" id="transformation">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Real Results</span>
+                <h2 class="sec-title reveal d1">Keratin Smoothing Transformation</h2>
+                <p class="sec-desc reveal d2">Drag the slider to see the real before & after result from our salon.</p>
+            </div>
+
+            <div class="transform-layout">
+                <!-- Before/After Slider -->
+                <div class="ba-container reveal">
+                    <div class="ba-wrapper" id="baWrapper">
+                        <div class="ba-img-layer ba-after">
+                            <img src="assets/images/before_after_keratin.png" alt="After Keratin Treatment" id="baAfterImg">
+                        </div>
+                        <div class="ba-img-layer ba-before" id="baBefore">
+                            <img src="assets/images/before_after_keratin.png" alt="Before Keratin Treatment" id="baBeforeImg">
+                        </div>
+                        <div class="ba-handle" id="baHandle">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-knob">◂ ▸</div>
+                            <div class="ba-handle-line"></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Before After Comparison Slider">
+                        <span class="ba-label ba-label-before">Before</span>
+                        <span class="ba-label ba-label-after">After</span>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="transform-info reveal d1">
+                    <div class="ti-badge">Keratin Smoothing</div>
+                    <h3>From Frizzy to Glass-Smooth</h3>
+                    <p>Deep molecular keratin protein infusion that transforms unmanageable, frizzy, curly hair into sleek, straight, reflective hair. Results last 4-6 months with proper care.</p>
+
+                    <div class="ti-details">
+                        <div class="ti-detail">
+                            <span class="td-label">Duration</span>
+                            <strong>2.5 – 3 Hours</strong>
+                        </div>
+                        <div class="ti-detail">
+                            <span class="td-label">Price</span>
+                            <strong>₹4,500</strong>
+                        </div>
+                        <div class="ti-detail">
+                            <span class="td-label">Lasts</span>
+                            <strong>4-6 Months</strong>
+                        </div>
+                    </div>
+
+                    <div class="ti-steps">
+                        <h4>Treatment Process</h4>
+                        <ol>
+                            <li>Hair health analysis & clarifying pH-balance wash</li>
+                            <li>Section-by-section keratin protein application</li>
+                            <li>Flat iron sealing at 230°C to lock proteins into cuticle</li>
+                            <li>Cool rinse, conditioning mask & finishing blowout</li>
+                        </ol>
+                    </div>
+
+                    <a href="#booking" class="btn-primary btn-full" data-cursor-interact>
+                        Book Keratin Treatment
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Results Gallery — Real Salon Work -->
+            <div class="gallery-row">
+                <div class="gallery-card reveal" data-cursor-interact>
+                    <img src="assets/images/nail_art_result.jpg" alt="Nail Extensions — Nude Gel Set" loading="lazy">
+                    <div class="gc-overlay">
+                        <span>Gel Nail Extensions</span>
+                    </div>
+                </div>
+                <div class="gallery-card reveal d1" data-cursor-interact>
+                    <img src="assets/images/hair_color_red.jpg" alt="Red Balayage Highlights" loading="lazy">
+                    <div class="gc-overlay">
+                        <span>Red Balayage Highlights</span>
+                    </div>
+                </div>
+                <div class="gallery-card reveal d2" data-cursor-interact>
+                    <img src="assets/images/hair_layered_result.jpg" alt="Layered Haircut Result" loading="lazy">
+                    <div class="gc-overlay">
+                        <span>Layered Cut & Blowout</span>
+                    </div>
+                </div>
+                <div class="gallery-card reveal" data-cursor-interact>
+                    <img src="assets/images/keratin_straight_result.jpg" alt="Keratin Straightening Result" loading="lazy">
+                    <div class="gc-overlay">
+                        <span>Keratin Straightening</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ SERVICES MENU ══════ -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Full Price Menu</span>
+                <h2 class="sec-title reveal d1">Services & Prices</h2>
+                <p class="sec-desc reveal d2">Browse all our services. Click to add any service to your booking.</p>
+            </div>
+
+            <div class="menu-tabs-container">
+                <input type="text" class="menu-search" id="menuSearch" placeholder="Search services..." autocomplete="off">
+                <div class="menu-tabs" id="menuTabs">
+                    <button class="menu-tab active" data-cat="hair" data-cursor-interact>Hair</button>
+                    <button class="menu-tab" data-cat="skin" data-cursor-interact>Skin</button>
+                    <button class="menu-tab" data-cat="body" data-cursor-interact>Body & Spa</button>
+                    <button class="menu-tab" data-cat="nails" data-cursor-interact>Hands & Feet</button>
+                    <button class="menu-tab" data-cat="bridal" data-cursor-interact>Bridal</button>
+                    <button class="menu-tab" data-cat="grooming" data-cursor-interact>Grooming</button>
+                </div>
+            </div>
+
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+
+    <!-- ══════ TEAM ══════ -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Our Artists</span>
+                <h2 class="sec-title reveal d1">The Team Behind the Magic</h2>
+                <p class="sec-desc reveal d2">Mentioned by name in Google Reviews for their exceptional skill and warmth.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card reveal" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sandeep</h3>
+                    <span class="tc-role">Owner & Unisex Hairdresser</span>
+                    <p>Founder of Hair Factor. Expert unisex hairdresser with years of experience delivering precision cuts and styling for both men and women.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal d1" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sai</h3>
+                    <span class="tc-role">Hairstylist & Pedicurist</span>
+                    <p>Versatile hairstylist and skilled pedicurist. From precision cuts to pampering pedicures, Sai delivers quality results every time.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal d2" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">M</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Mai</h3>
+                    <span class="tc-role">Beautician</span>
+                    <p>Skilled beautician specializing in facials, threading, waxing and beauty treatments. Mai ensures every client feels refreshed and radiant.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sagitha</h3>
+                    <span class="tc-role">Beautician</span>
+                    <p>Expert beautician with a passion for bridal and party makeup. Sagitha crafts stunning looks for every occasion with care and precision.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ REVIEWS ══════ -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Google Reviews</span>
+                <h2 class="sec-title reveal d1">What Our Guests Say</h2>
+            </div>
+        </div>
+        <div class="reviews-marquee">
+            <div class="reviews-track" id="reviewsTrack">
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"I had a really great experience at Hair Factor Salon. The place is clean, well-maintained, and the overall atmosphere is welcoming. Staff are professional."</blockquote>
+                    <div class="rev-author"><div class="rev-av">MS</div><div><strong>Mohammed Salman Shah Khan</strong><span>Local Guide · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Had an amazing haircut experience with Suraj and Aayan! They were super friendly, professional, and did a fantastic job. Both me and my mother are really happy!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">SA</div><div><strong>Sayad Afrin</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Went to do my eyebrows but came out with flaunting hair too! Friendly nature made me feel comfortable enough to go for a haircut. Prices are reasonable!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">UM</div><div><strong>Uma Maheshwari</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"One of the best salons in Begumpet. Ashok did an amazing job on my nail extensions — they look so natural and beautiful. Will definitely come back again!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">PS</div><div><strong>Priya Sharma</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Got keratin treatment done here and the results are incredible! My frizzy hair is now so smooth and silky. The team is very knowledgeable and pricing is fair."</blockquote>
+                    <div class="rev-author"><div class="rev-av">RK</div><div><strong>Ramya Krishna</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <!-- Duplicates for infinite loop -->
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"I had a really great experience at Hair Factor Salon. The place is clean, well-maintained, and the overall atmosphere is welcoming. Staff are professional."</blockquote>
+                    <div class="rev-author"><div class="rev-av">MS</div><div><strong>Mohammed Salman Shah Khan</strong><span>Local Guide · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Had an amazing haircut experience with Suraj and Aayan! They were super friendly, professional, and did a fantastic job. Both me and my mother are really happy!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">SA</div><div><strong>Sayad Afrin</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Went to do my eyebrows but came out with flaunting hair too! Friendly nature made me feel comfortable enough to go for a haircut. Prices are reasonable!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">UM</div><div><strong>Uma Maheshwari</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"One of the best salons in Begumpet. Ashok did an amazing job on my nail extensions — they look so natural and beautiful. Will definitely come back again!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">PS</div><div><strong>Priya Sharma</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Got keratin treatment done here and the results are incredible! My frizzy hair is now so smooth and silky. The team is very knowledgeable and pricing is fair."</blockquote>
+                    <div class="rev-author"><div class="rev-av">RK</div><div><strong>Ramya Krishna</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem;">
+            <a href="https://search.google.com/local/writereview?placeid=ChIJ_ypKgQ-YyzsRGcAkVfC5AKo" target="_blank" rel="noopener" class="btn-primary" data-cursor-interact style="display:inline-flex;">
+                Leave Us a Review
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════ BOOKING & LOCATION ══════ -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Reserve Your Visit</span>
+                <h2 class="sec-title reveal d1">Book Your Appointment</h2>
+                <p class="sec-desc reveal d2">Pick services from the menu, choose your date & time, and confirm.</p>
+            </div>
+
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div class="book-card reveal">
+                    <h3>Reserve Your Session</h3>
+                    <p class="book-sub">Select services, choose your date & time, and confirm.</p>
+
+                    <div class="book-body">
+                        <div class="fb">
+                            <label>Selected Services:</label>
+                            <div class="selected-box" id="selectedServicesSummary">
+                                <p class="ph-text">Add services from the menu above ↑</p>
+                            </div>
+                        </div>
+
+                        <div class="fb">
+                            <label>Select Date:</label>
+                            <div class="date-row" id="dateScrollContainer"></div>
+                        </div>
+                        <div class="fb">
+                            <label>Select Time:</label>
+                            <div class="time-grid" id="timeSlotsContainer">
+                                <p class="ph-text">Pick a date first</p>
+                            </div>
+                        </div>
+                        <form id="salonBookingForm" onsubmit="return false;">
+                            <div class="fb-split">
+                                <div class="ff"><label for="userName">Full Name *</label><input type="text" id="userName" required placeholder="e.g. Rahul Kumar" data-cursor-interact></div>
+                                <div class="ff"><label for="userPhone">Mobile *</label><input type="tel" id="userPhone" required placeholder="9876543210" pattern="^[0-9\-\+\s]{10,15}$" data-cursor-interact></div>
+                            </div>
+                            <div class="ff"><label for="userNotes">Special Requests</label><textarea id="userNotes" rows="2" placeholder="Allergies, reference images..." data-cursor-interact></textarea></div>
+                            <button type="submit" class="btn-submit" id="submitBookingBtn" disabled data-cursor-interact>Confirm Appointment</button>
+                        </form>
+                    </div>
+
+                    <!-- Success -->
+                    <div class="book-success" id="successOverlay">
+                        <div class="bs-inner">
+                            <div class="bs-check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none"/><path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+                            <h4>Appointment Confirmed!</h4>
+                            <p>Your booking receipt:</p>
+                            <div class="receipt">
+                                <p><strong>Booking ID:</strong> <span id="receiptId">HF-00000</span></p>
+                                <p><strong>Services:</strong> <span id="receiptServices">—</span></p>
+
+                                <p><strong>When:</strong> <span id="receiptWhen">—</span></p>
+                                <p><strong>Est. Total:</strong> <span id="receiptPrice">₹0</span></p>
+                            </div>
+                            <button class="btn-reset" id="resetBookingBtn" data-cursor-interact>Done & Book Another</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="loc-card reveal d1">
+                    <span class="loc-tag">Find Us</span>
+                    <h3>Visit Our Salon</h3>
+                    <p class="loc-branch">Hair Factor Unisex Salon, Begumpet</p>
+
+                    <div class="loc-items">
+                        <div class="loc-item"><span class="li-icon">📍</span><div><strong>Address</strong><p>6-3-1187, G-4, CM Camp Office, beside Kakatiya ITC Hotel, Teachers Colony, Greenlands, Begumpet, Hyderabad 500016</p><small>Inside Srinivasa Towers</small></div></div>
+                        <div class="loc-item"><span class="li-icon">📞</span><div><strong>Phone</strong><p><a href="tel:+919618361142" class="accent-link" data-cursor-interact>+91 96183 61142</a></p></div></div>
+                        <div class="loc-item"><span class="li-icon">⏰</span><div><strong>Hours</strong><p>Open Daily: 9 AM – 8 PM</p></div></div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=HAIR+FACTOR+UNISEX+SALON+NAIL+FACTOR+SALON+BEGUMPET" target="_blank" rel="noopener" class="btn-directions" data-cursor-interact>🗺️ Get Directions on Google Maps</a>
+
+                    <div class="loc-map">
+                        <iframe title="Salon Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.690858153406!2d78.45524817596568!3d17.426615501358988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90ab452df393%3A0xe54dbe4d207f2df1!2sHAIR%20FACTOR%20UNISEX%20SALON%20NAIL%20FACTOR%20SALON%20BEGUMPET!5e0!3m2!1sen!2sin!4v1719600000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ FOOTER ══════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="ft-brand">
+                    <a href="#home" class="nav-brand"><span class="brand-name">HAIR <span>FACTOR</span></span><span class="brand-sub">UNISEX SALON · BEGUMPET</span></a>
+                    <p>Premium styling, beauty treatments, and spa care. Serving 890+ happy clients in Begumpet with dedicated craftsmanship and care.</p>
+                    <div class="ft-gmb"><span class="trust-stars">★★★★★</span> 4.8 Rating (890+ Reviews)</div>
+                </div>
+                <div class="ft-col">
+                    <h4>Contact</h4>
+                    <a href="tel:+919618361142" data-cursor-interact>📞 +91 96183 61142</a>
+                    <span>📍 Greenlands, Begumpet</span>
+                    <span>⏰ Daily 9 AM – 8 PM</span>
+                </div>
+                <div class="ft-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home" data-cursor-interact>Home</a>
+                    <a href="#transformation" data-cursor-interact>Results</a>
+                    <a href="#menu" data-cursor-interact>Prices</a>
+                    <a href="#booking" data-cursor-interact>Book Now</a>
+                    <a href="privacy.html" data-cursor-interact>Privacy Policy</a>
+                    <a href="terms.html" data-cursor-interact>Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Hair Factor Unisex Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
