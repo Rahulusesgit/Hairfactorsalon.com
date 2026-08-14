@@ -197,10 +197,10 @@ body.no-scroll{overflow:hidden}
 
 /* Hero H1 */
 .hero-h1{
-    font-family:var(--serif);font-size:clamp(3.5rem,6vw,5.5rem);font-weight:500;
+    font-family:var(--serif);font-size:clamp(3.5rem,6vw,5.5rem);font-weight:300;
     line-height:1.06;letter-spacing:-.03em;margin-bottom:1.75rem;color:var(--text);
 }
-.hero-h1 em{font-style:italic;font-weight:600;color:var(--accent);letter-spacing:0}
+.hero-h1 em{font-style:italic;font-weight:400;color:var(--accent);letter-spacing:0}
 
 /* Editorial pulse typewriter */
 .editorial-pulse{animation:editorialGlow 4s ease-in-out infinite alternate}

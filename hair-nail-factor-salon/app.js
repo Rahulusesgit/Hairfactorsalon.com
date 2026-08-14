@@ -587,24 +587,14 @@ function submit() {
     const p = document.getElementById("userPhone").value.trim();
     const ref = "HF-" + Math.floor(10000 + Math.random() * 90000);
     const total = state.services.reduce((s, x) => s + x.price, 0);
-    const servicesList = state.services.map(s => s.name);
-    const ticket = { id: ref, services: servicesList, price: total, date: state.date, time: state.time, name: n };
-    
+    const ticket = { id: ref, services: state.services.map(s => s.name), price: total, date: state.date, time: state.time, name: n };
     localStorage.setItem("activeBooking", JSON.stringify(ticket));
     document.getElementById("receiptId").textContent = ref;
     document.getElementById("receiptServices").textContent = ticket.services.join(", ");
     document.getElementById("receiptWhen").textContent = `${ticket.date} at ${ticket.time}`;
-    document.getElementById("receiptPrice").textContent = `₹${total.toLocaleString("en-IN")}`;
+    document.getElementById("receiptPrice").textContent = `â‚¹${total.toLocaleString("en-IN")}`;
     document.getElementById("successOverlay").classList.add("open");
     checkBooking();
-
-    // Construct WhatsApp message
-    const waNumber = "919618361142";
-    const message = `Hello Hair Factor Salon!\nI would like to book an appointment.\n\n*Name:* ${n}\n*Phone:* ${p}\n*Services:* ${servicesList.join(", ")}\n*Preferred Date:* ${state.date}\n*Preferred Time:* ${state.time}\n\nIs this slot available?`;
-    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
-    
-    // Open WhatsApp in a new tab
-    window.open(waUrl, "_blank");
 }
 
 function reset() {
