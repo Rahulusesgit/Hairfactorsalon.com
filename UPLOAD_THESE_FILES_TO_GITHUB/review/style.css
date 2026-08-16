@@ -1,0 +1,478 @@
+/* ═══════════════════════════════════════════════
+   HAIR FACTOR SALON — REVIEW FUNNEL STYLES
+   Mobile-First · Premium Salon Aesthetic
+   ═══════════════════════════════════════════════ */
+
+/* ═══ RESET & VARIABLES ═══ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg: #0c0b10;
+    --bg2: #141318;
+    --bg3: #1a1920;
+    --card: #1e1d24;
+    --card-border: rgba(255,255,255,0.06);
+    --text: #faf8f5;
+    --text2: #b0adb5;
+    --text3: #7a7880;
+    --accent: #d4b896;
+    --accent-l: #f0dfc8;
+    --gold: #f5c842;
+    --gold-glow: rgba(245,200,66,0.25);
+    --green: #4ade80;
+    --red: #f87171;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --radius: 20px;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a { color: var(--accent); text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+input, textarea, select { font-family: inherit; }
+
+/* ═══ APP WRAPPER ═══ */
+.app-wrapper {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+/* ═══ SCREEN TRANSITIONS ═══ */
+.screen {
+    display: none;
+    animation: fadeSlideIn 0.5s var(--ease) forwards;
+}
+.screen.active {
+    display: block;
+}
+@keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══ REVIEW CARD ═══ */
+.review-card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03);
+    position: relative;
+    overflow: hidden;
+}
+.review-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.4;
+}
+
+/* ═══ SALON BRAND ═══ */
+.salon-brand {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.brand-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    animation: scissorFloat 3s ease-in-out infinite alternate;
+}
+@keyframes scissorFloat {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-6px) rotate(5deg); }
+}
+.salon-name {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+.salon-name span {
+    color: var(--accent);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* ═══ DIVIDER ═══ */
+.divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 1.5rem auto;
+}
+
+/* ═══ QUESTION ═══ */
+.question {
+    font-family: var(--sans);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text2);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ═══ STAR RATING ═══ */
+.stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0 1rem;
+}
+.star-btn {
+    width: 52px;
+    height: 52px;
+    padding: 6px;
+    border-radius: 12px;
+    transition: all 0.25s var(--ease);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+.star-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--bg3);
+    stroke: none;
+    transition: all 0.3s var(--ease);
+    filter: drop-shadow(0 0 0 transparent);
+}
+.star-btn:hover svg,
+.star-btn.hovered svg {
+    fill: var(--gold);
+    filter: drop-shadow(0 0 8px var(--gold-glow));
+    transform: scale(1.1);
+}
+.star-btn.selected svg {
+    fill: var(--gold);
+    filter: drop-shadow(0 0 12px var(--gold-glow));
+    transform: scale(1.15);
+}
+.star-btn:active svg {
+    transform: scale(0.9);
+}
+.star-btn.pop svg {
+    animation: starPop 0.4s var(--ease);
+}
+@keyframes starPop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.35); }
+    70% { transform: scale(0.95); }
+    100% { transform: scale(1.15); }
+}
+.star-hint {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text3);
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+/* ═══ FEEDBACK CARD ═══ */
+.feedback-card {
+    padding: 2rem 1.5rem 2.5rem;
+}
+.feedback-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.emoji-sad {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.feedback-header h2 {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+.feedback-subtitle {
+    font-size: 0.88rem;
+    color: var(--text2);
+    line-height: 1.6;
+}
+
+/* ═══ FORM STYLES ═══ */
+.form-section {
+    margin-top: 1.5rem;
+}
+.form-section-title {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.optional-tag {
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    color: var(--text3);
+    background: rgba(255,255,255,0.05);
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+.form-section-desc {
+    font-size: 0.8rem;
+    color: var(--text3);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text2);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+}
+.required-star {
+    color: var(--red);
+    font-weight: 700;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--bg2);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.25s var(--ease);
+    -webkit-appearance: none;
+    appearance: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text3);
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(212,184,150,0.1);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+    line-height: 1.5;
+}
+
+/* ═══ SUBMIT BUTTON ═══ */
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: linear-gradient(135deg, var(--accent), var(--accent-l));
+    border-radius: 14px;
+    transition: all 0.3s var(--ease);
+    box-shadow: 0 4px 20px rgba(212,184,150,0.25);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(212,184,150,0.35);
+}
+.btn-submit:active {
+    transform: translateY(0);
+}
+.btn-submit:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.btn-loading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.spinner {
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ═══ RETRY BUTTON ═══ */
+.btn-retry {
+    margin-top: 1.5rem;
+}
+
+/* ═══ THANK YOU SCREENS ═══ */
+.thanks-card {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.thanks-card h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+.thanks-card p {
+    font-size: 0.92rem;
+    color: var(--text2);
+    line-height: 1.6;
+}
+
+/* Success checkmark */
+.success-check {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+}
+.success-check svg {
+    width: 100%;
+    height: 100%;
+}
+.success-check circle {
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    animation: drawCircle 0.6s 0.2s var(--ease) forwards;
+}
+.success-check path {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: drawCheck 0.4s 0.6s var(--ease) forwards;
+}
+@keyframes drawCircle {
+    to { stroke-dashoffset: 0; }
+}
+@keyframes drawCheck {
+    to { stroke-dashoffset: 0; }
+}
+
+/* Heart emoji */
+.success-heart {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    animation: heartBeat 1s ease-in-out;
+}
+@keyframes heartBeat {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.3); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+/* Redirect notice */
+.redirect-notice {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    color: var(--text3);
+    letter-spacing: 0.04em;
+}
+
+/* ═══ ERROR CARD ═══ */
+.error-card {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+}
+.error-card h2 {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+.error-card p {
+    font-size: 0.9rem;
+    color: var(--text2);
+    line-height: 1.6;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    .review-card {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+    }
+    .salon-name {
+        font-size: 1.75rem;
+    }
+    .star-btn {
+        width: 48px;
+        height: 48px;
+    }
+    .stars-container {
+        gap: 0.4rem;
+    }
+    .feedback-card {
+        padding: 1.75rem 1.25rem 2rem;
+    }
+    .thanks-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .star-btn {
+        width: 42px;
+        height: 42px;
+    }
+    .salon-name {
+        font-size: 1.55rem;
+    }
+}
+
+@media (min-width: 481px) {
+    body {
+        min-height: 100vh;
+        align-items: center;
+    }
+}
