@@ -599,7 +599,7 @@ function submit() {
     checkBooking();
 
     // Construct WhatsApp message
-    const waNumber = "919618361142";
+    const waNumber = "919032891297";
     const message = `Hello Hair Factor Salon!\nI would like to book an appointment.\n\n*Name:* ${n}\n*Phone:* ${p}\n*Services:* ${servicesList.join(", ")}\n*Preferred Date:* ${state.date}\n*Preferred Time:* ${state.time}\n\nIs this slot available?`;
     const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
     
