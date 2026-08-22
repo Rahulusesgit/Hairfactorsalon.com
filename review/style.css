@@ -158,19 +158,22 @@ input, textarea, select { font-family: inherit; }
 .star-btn svg {
     width: 100%;
     height: 100%;
-    fill: var(--bg3);
-    stroke: none;
+    fill: transparent;
+    stroke: rgba(255,255,255,0.35);
+    stroke-width: 1.5;
     transition: all 0.3s var(--ease);
     filter: drop-shadow(0 0 0 transparent);
 }
 .star-btn:hover svg,
 .star-btn.hovered svg {
     fill: var(--gold);
+    stroke: none;
     filter: drop-shadow(0 0 8px var(--gold-glow));
     transform: scale(1.1);
 }
 .star-btn.selected svg {
     fill: var(--gold);
+    stroke: none;
     filter: drop-shadow(0 0 12px var(--gold-glow));
     transform: scale(1.15);
 }
