@@ -25,6 +25,10 @@ const SERVICES = [
     { id: "m21", name: "Waxing - Full (Hands, Legs & Underarms)", price: 2500, dur: "45 min", cat: "skin", desc: "" },
     { id: "m22", name: "Waxing - Body", price: 5000, dur: "45 min", cat: "skin", desc: "" },
     { id: "m23", name: "Waxing - Bikini Line", price: 2000, dur: "45 min", cat: "skin", desc: "" },
+    { id: "k1", name: "Keratin Treatment - Upto Shoulder", price: 4500, dur: "2.5 - 3 hrs", cat: "hair", desc: "Deep molecular keratin protein infusion for glass-smooth, frizz-free hair. Lasts 4-6 months." },
+    { id: "k2", name: "Keratin Treatment - Below Shoulder", price: 5500, dur: "3 hrs", cat: "hair", desc: "Intense keratin smoothing, deep nourishment and protein repair for longer hair." },
+    { id: "k3", name: "Keratin Treatment - Waist & Below", price: 6800, dur: "3.5 hrs", cat: "hair", desc: "Complete keratin reconstruction and mirror-shine glass finish for extra-long hair." },
+    { id: "k4", name: "Keratin Express Blowout", price: 2500, dur: "1.5 hrs", cat: "hair", desc: "Quick frizz-reduction and radiant shine boost treatment." },
     { id: "m24", name: "Smoothening - Fringe", price: 1300, dur: "45 min", cat: "hair", desc: "Let's go of the frizz tame your hair with this smoothening services without compromising on the in hair" },
     { id: "m25", name: "Smoothening - Crown", price: 2800, dur: "45 min", cat: "hair", desc: "" },
     { id: "m26", name: "Smoothening - Upto Neck", price: 3800, dur: "45 min", cat: "hair", desc: "" },
@@ -274,6 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initForm();
     checkBooking();
     initStylistButtons();
+    initKeratinButton();
 });
 
 // ==========================================
@@ -644,6 +649,26 @@ function initStylistButtons() {
         b.addEventListener("click", () => {
             document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
         });
+    });
+}
+
+// ==========================================
+// KERATIN QUICK BOOK BUTTON
+// ==========================================
+function initKeratinButton() {
+    const btn = document.getElementById("bookKeratinBtn");
+    if (!btn) return;
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const keratinSvc = SERVICES.find(s => s.id === "k1");
+        if (keratinSvc) {
+            if (!state.services.some(s => s.id === keratinSvc.id)) {
+                state.services.push(keratinSvc);
+                renderCart();
+                updateBtns();
+            }
+        }
+        document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
     });
 }
 
