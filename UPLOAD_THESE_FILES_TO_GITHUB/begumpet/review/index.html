@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hair Factor Salon — Rate Your Experience</title>
+    <meta name="description" content="Tell us about your experience at Hair Factor Salon. Your feedback helps us serve you better.">
+    <meta name="theme-color" content="#0c0b10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ══════ MAIN CONTAINER ══════ -->
+    <div class="app-wrapper" id="appWrapper">
+
+        <!-- ══════ SCREEN 1: STAR RATING ══════ -->
+        <div class="screen active" id="screenRating">
+            <div class="review-card">
+                <div class="salon-brand">
+                    <div class="brand-icon">✂</div>
+                    <h1 class="salon-name">Hair Factor<br><span>Salon</span></h1>
+                </div>
+                <div class="divider"></div>
+                <h2 class="question">How was your experience?</h2>
+                <div class="stars-container" id="starsContainer">
+                    <button class="star-btn" data-rating="1" aria-label="1 star">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </button>
+                    <button class="star-btn" data-rating="2" aria-label="2 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </button>
+                    <button class="star-btn" data-rating="3" aria-label="3 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </button>
+                    <button class="star-btn" data-rating="4" aria-label="4 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </button>
+                    <button class="star-btn" data-rating="5" aria-label="5 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </button>
+                </div>
+                <p class="star-hint" id="starHint">Tap a star to rate your experience</p>
+            </div>
+        </div>
+
+        <!-- ══════ SCREEN 2: FEEDBACK FORM (1-3 Stars) ══════ -->
+        <div class="screen" id="screenFeedback">
+            <div class="review-card feedback-card">
+                <div class="feedback-header">
+                    <div class="emoji-sad">😔</div>
+                    <h2>We're sorry your experience wasn't perfect.</h2>
+                    <p class="feedback-subtitle">Your feedback helps us improve. Please tell us what happened.</p>
+                </div>
+                <div class="divider"></div>
+                <form id="feedbackForm" novalidate>
+                    <div class="form-section">
+                        <h3 class="form-section-title">Customer Information <span class="optional-tag">optional</span></h3>
+                        <p class="form-section-desc">If you'd like us to contact you about your experience, please leave your phone number or email.</p>
+                        <div class="form-group">
+                            <label for="customerName">Name</label>
+                            <input type="text" id="customerName" placeholder="Your name" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPhone">Phone Number</label>
+                            <input type="tel" id="customerPhone" placeholder="Your phone number" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerEmail">Email</label>
+                            <input type="email" id="customerEmail" placeholder="Your email address" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3 class="form-section-title">Your Feedback</h3>
+                        <div class="form-group">
+                            <label for="feedbackMain">What could we have done better? <span class="required-star">*</span></label>
+                            <textarea id="feedbackMain" rows="4" placeholder="Please share your experience..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackExtra">Is there anything else you'd like us to know?</label>
+                            <textarea id="feedbackExtra" rows="3" placeholder="Any additional comments..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit" id="btnSubmit">
+                        <span class="btn-text">Submit Feedback</span>
+                        <span class="btn-loading" style="display:none;">
+                            <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="60" stroke-dashoffset="20"/></svg>
+                            Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ══════ SCREEN 3: THANK YOU — FEEDBACK SUBMITTED ══════ -->
+        <div class="screen" id="screenThanksFeedback">
+            <div class="review-card thanks-card">
+                <div class="success-check">
+                    <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none" stroke="#4ade80" stroke-width="2"/><path fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                </div>
+                <h2>Thank you for your feedback.</h2>
+                <p>We really appreciate you taking the time to help Hair Factor Salon improve.</p>
+            </div>
+        </div>
+
+        <!-- ══════ SCREEN 4: THANK YOU — GOOGLE REDIRECT (4-5 Stars) ══════ -->
+        <div class="screen" id="screenThanksGoogle">
+            <div class="review-card thanks-card">
+                <div class="success-heart">💛</div>
+                <h2>Thank you!</h2>
+                <p>We're so glad you had a great experience.</p>
+                <p class="redirect-notice">Taking you to Google Reviews...</p>
+            </div>
+        </div>
+
+        <!-- ══════ SCREEN 5: ERROR STATE ══════ -->
+        <div class="screen" id="screenError">
+            <div class="review-card error-card">
+                <div class="error-icon">⚠️</div>
+                <h2>Something went wrong.</h2>
+                <p>We couldn't submit your feedback right now. Please try again.</p>
+                <button class="btn-submit btn-retry" id="btnRetry">Try Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
