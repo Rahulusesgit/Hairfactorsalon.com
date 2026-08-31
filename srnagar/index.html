@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Factor Salon | Premium Salon · SR Nagar, Hyderabad</title>
+    <meta name="description" content="SR Nagar's most trusted unisex salon — keratin treatments, hair coloring, beauty services & spa. 4.8★ by 155+ clients. Book your appointment online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-cursor="default">
+    <div class="noise-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Comb Cursor -->
+    <div class="cursor-comb" id="cursorComb">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="combGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="100%" stop-color="#cccccc"/>
+                </linearGradient>
+            </defs>
+            <rect x="3" y="1" width="30" height="9" rx="4" fill="url(#combGrad)" opacity="0.95"/>
+            <rect x="3" y="1" width="30" height="9" rx="4" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+            <rect x="6" y="10" width="2" height="11" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="10.5" y="10" width="2" height="14" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="15" y="10" width="2" height="12" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="19.5" y="10" width="2" height="15" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="24" y="10" width="2" height="13" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+            <rect x="28.5" y="10" width="2" height="10" rx="1" fill="url(#combGrad)" opacity="0.9"/>
+        </svg>
+    </div>
+
+    <!-- ══════ FLOATING GLASS NAVBAR ══════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand" data-cursor-interact>
+                <img src="assets/images/logo.jpg" alt="Hair Factor Unisex Salon" class="nav-logo">
+                <div class="nav-brand-text">
+                    <div class="brand-name">HAIR <span>FACTOR</span></div>
+                    <div class="brand-sub">UNISEX SALON</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active" data-cursor-interact>Home</a>
+                <a href="#transformation" data-cursor-interact>Results</a>
+                <a href="#menu" data-cursor-interact>Prices</a>
+                <a href="#team" data-cursor-interact>Team</a>
+                <a href="#reviews" data-cursor-interact>Reviews</a>
+                <a href="#booking" class="nav-book" data-cursor-interact>Book Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" data-cursor-interact>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#transformation" class="drawer-link">Results</a>
+        <a href="#menu" class="drawer-link">Prices</a>
+        <a href="#team" class="drawer-link">Team</a>
+        <a href="#reviews" class="drawer-link">Reviews</a>
+        <a href="#booking" class="drawer-link drawer-cta">Book Appointment</a>
+        <div class="drawer-phone">
+            <p>Call us directly:</p>
+            <a href="tel:+919177892616">+91 9177892616</a>
+        </div>
+    </div>
+
+    <!-- ══════ HERO ══════ -->
+    <section class="hero" id="home">
+        <!-- Left: Text Side -->
+        <div class="hero-text">
+            <div class="hero-sunbeam" aria-hidden="true"></div>
+            <div class="hero-watermark">HAIR FACTOR</div>
+
+            <span class="hero-eyebrow anim-up">SR Nagar, Hyderabad</span>
+
+            <h1 class="hero-h1 anim-up d1">
+                Hair Factor<br><em id="typewriter" class="editorial-pulse">Unisex Salon.</em>
+            </h1>
+
+            <p class="hero-p anim-up d2">
+                Step into SR Nagar's premier unisex sanctuary where master artistry meets precision hairdressing, beauty treatments & rejuvenating spa care.
+            </p>
+
+            <div class="hero-ctas anim-up d3">
+                <a href="#booking" class="btn-primary" data-cursor-interact>
+                    Book Appointment
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="tel:+919177892616" class="btn-outline" data-cursor-interact>Call 9177892616</a>
+            </div>
+
+            <div class="hero-stats anim-up d4">
+                <div class="hero-stat"><span class="val">4.8</span><span class="lab">Google Rating</span></div>
+                <div class="hero-stat"><span class="val">155+</span><span class="lab">Client Reviews</span></div>
+                <div class="hero-stat"><span class="val">Open Daily</span><span class="lab">Until 10 PM</span></div>
+            </div>
+        </div>
+
+        <!-- Right: Full Bleed Visual -->
+        <div class="hero-visual anim-up d2">
+            <img src="assets/images/hero_salon.webp" alt="Hair Factor Unisex Salon — real salon interior with styling stations and wash basins" loading="eager">
+
+            <div class="hero-badge" data-cursor-interact>
+                <div class="badge-stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div><strong>4.8 Rated</strong><small>155+ Google Reviews</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating upcoming badge (outside hero) -->
+    <div class="upcoming-badge hidden" id="upcomingBadge">
+        <span class="ub-pulse"></span>
+        <div class="ub-body">
+            <p id="badgeText"></p>
+            <button id="cancelBadgeBtn" class="ub-cancel" data-cursor-interact>Cancel</button>
+        </div>
+    </div>
+
+    <!-- ══════ BEFORE / AFTER TRANSFORMATION ══════ -->
+    <section class="transform-section" id="transformation">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Real Results</span>
+                <h2 class="sec-title reveal d1">Keratin Smoothing Transformation</h2>
+                <p class="sec-desc reveal d2">Drag the slider to see the real before & after result from our salon.</p>
+            </div>
+
+            <div class="transform-layout">
+                <!-- Before/After Slider -->
+                <div class="ba-container reveal">
+                    <div class="ba-wrapper" id="baWrapper">
+                        <div class="ba-img-layer ba-after">
+                            <img src="assets/images/before_after_keratin.png" alt="After Keratin Treatment" id="baAfterImg">
+                        </div>
+                        <div class="ba-img-layer ba-before" id="baBefore">
+                            <img src="assets/images/before_after_keratin.png" alt="Before Keratin Treatment" id="baBeforeImg">
+                        </div>
+                        <div class="ba-handle" id="baHandle">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-knob">◂ ▸</div>
+                            <div class="ba-handle-line"></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Before After Comparison Slider">
+                        <span class="ba-label ba-label-before">Before</span>
+                        <span class="ba-label ba-label-after">After</span>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="transform-info reveal d1">
+                    <div class="ti-badge">Keratin Smoothing</div>
+                    <h3>From Frizzy to Glass-Smooth</h3>
+                    <p>Deep molecular keratin protein infusion that transforms unmanageable, frizzy, curly hair into sleek, straight, reflective hair. Results last 4-6 months with proper care.</p>
+
+                    <div class="ti-details">
+                        <div class="ti-detail">
+                            <span class="td-label">Duration</span>
+                            <strong>2.5 – 3 Hours</strong>
+                        </div>
+                        <div class="ti-detail">
+                            <span class="td-label">Price</span>
+                            <strong>₹3,500 (Onwards)</strong>
+                        </div>
+                        <div class="ti-detail">
+                            <span class="td-label">Lasts</span>
+                            <strong>4-6 Months</strong>
+                        </div>
+                    </div>
+
+                    <div class="ti-steps">
+                        <h4>Treatment Process</h4>
+                        <ol>
+                            <li>Hair health analysis & clarifying pH-balance wash</li>
+                            <li>Section-by-section keratin protein application</li>
+                            <li>Flat iron sealing at 230°C to lock proteins into cuticle</li>
+                            <li>Cool rinse, conditioning mask & finishing blowout</li>
+                        </ol>
+                    </div>
+
+                    <a href="#booking" id="bookKeratinBtn" class="btn-primary btn-full" data-cursor-interact>
+                        Book Keratin Treatment
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Results Gallery — Instagram Reels -->
+            <div class="gallery-row gallery-reels">
+                <a href="https://www.instagram.com/reel/DYHz-2fJU3m/" target="_blank" rel="noopener" class="gallery-card gallery-reel-card reveal" data-cursor-interact>
+                    <div class="reel-embed-wrap"><iframe src="https://www.instagram.com/reel/DYHz-2fJU3m/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe></div>
+                    <div class="gc-overlay"><span>▶ Watch Reel</span></div>
+                </a>
+                <a href="https://www.instagram.com/reel/DYFNI8dJmdG/" target="_blank" rel="noopener" class="gallery-card gallery-reel-card reveal d1" data-cursor-interact>
+                    <div class="reel-embed-wrap"><iframe src="https://www.instagram.com/reel/DYFNI8dJmdG/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe></div>
+                    <div class="gc-overlay"><span>▶ Watch Reel</span></div>
+                </a>
+                <a href="https://www.instagram.com/reel/DZSNyopJncf/" target="_blank" rel="noopener" class="gallery-card gallery-reel-card reveal d2" data-cursor-interact>
+                    <div class="reel-embed-wrap"><iframe src="https://www.instagram.com/reel/DZSNyopJncf/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe></div>
+                    <div class="gc-overlay"><span>▶ Watch Reel</span></div>
+                </a>
+                <a href="https://www.instagram.com/reel/Db2uKmqJlu7/" target="_blank" rel="noopener" class="gallery-card gallery-reel-card reveal" data-cursor-interact>
+                    <div class="reel-embed-wrap"><iframe src="https://www.instagram.com/reel/Db2uKmqJlu7/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe></div>
+                    <div class="gc-overlay"><span>▶ Watch Reel</span></div>
+                </a>
+                <a href="https://www.instagram.com/reel/DZ66WPfJX_A/" target="_blank" rel="noopener" class="gallery-card gallery-reel-card reveal d1" data-cursor-interact>
+                    <div class="reel-embed-wrap"><iframe src="https://www.instagram.com/reel/DZ66WPfJX_A/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe></div>
+                    <div class="gc-overlay"><span>▶ Watch Reel</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ SERVICES MENU ══════ -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Full Price Menu</span>
+                <h2 class="sec-title reveal d1">Services & Prices</h2>
+                <p class="sec-desc reveal d2">Browse all our services. Click to add any service to your booking.</p>
+            </div>
+
+            <div class="menu-tabs-container">
+                <input type="text" class="menu-search" id="menuSearch" placeholder="Search services..." autocomplete="off">
+                <div class="menu-tabs" id="menuTabs">
+                    <button class="menu-tab active" data-cat="hair" data-cursor-interact>Hair</button>
+                    <button class="menu-tab" data-cat="skin" data-cursor-interact>Skin</button>
+                    <button class="menu-tab" data-cat="body" data-cursor-interact>Body & Spa</button>
+                    <button class="menu-tab" data-cat="nails" data-cursor-interact>Hands & Feet</button>
+                </div>
+            </div>
+
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+
+    <!-- ══════ TEAM ══════ -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Our Artists</span>
+                <h2 class="sec-title reveal d1">The Team Behind the Magic</h2>
+                <p class="sec-desc reveal d2">Mentioned by name in Google Reviews for their exceptional skill and warmth.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card reveal" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sandeep</h3>
+                    <span class="tc-role">Owner & Unisex Hairdresser</span>
+                    <p>Founder of Hair Factor. Expert unisex hairdresser with years of experience delivering precision cuts and styling for both men and women.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal d1" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sai</h3>
+                    <span class="tc-role">Hairstylist & Pedicurist</span>
+                    <p>Versatile hairstylist and skilled pedicurist. From precision cuts to pampering pedicures, Sai delivers quality results every time.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal d2" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">M</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Mai</h3>
+                    <span class="tc-role">Beautician</span>
+                    <p>Skilled beautician specializing in facials, threading, waxing and beauty treatments. Mai ensures every client feels refreshed and radiant.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+                <div class="team-card reveal" data-cursor-interact>
+                    <div class="tc-avatar-area">
+                        <div class="tc-avatar-ring"><div class="tc-initials">S</div></div>
+                        <span class="tc-status"><span class="status-dot"></span> Available</span>
+                    </div>
+                    <h3>Sagitha</h3>
+                    <span class="tc-role">Beautician</span>
+                    <p>Expert beautician with a passion for bridal and party makeup. Sagitha crafts stunning looks for every occasion with care and precision.</p>
+                    <button class="btn-book-stylist select-stylist-quick" data-cursor-interact>Book Session →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ REVIEWS ══════ -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Google Reviews</span>
+                <h2 class="sec-title reveal d1">What Our Guests Say</h2>
+            </div>
+        </div>
+        <div class="reviews-marquee">
+            <div class="reviews-track" id="reviewsTrack">
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Had a great experience at this salon! The staff is professional and welcoming. Special thanks to Vasu Bhai for his excellent service — he really understands what suits you and delivers perfectly. Highly recommended!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">KN</div><div><strong>Keshav Nagpal</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"I had wonderful experience with staff and ambience is too good. The salon is very clean and well-maintained. Must visit for anyone in SR Nagar area!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">RT</div><div><strong>Ravi Teja</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Very good satisfaction with price and better service. The team here knows exactly what they're doing. Got my hair colored and it turned out amazing!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">SR</div><div><strong>Sneha Reddy</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Budget friendly salon with excellent quality work. Got my keratin done here and the results lasted months. Sandeep and his team are really skilled professionals."</blockquote>
+                    <div class="rev-author"><div class="rev-av">AK</div><div><strong>Arun Kumar</strong><span>Local Guide · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Amazing experience at Hair Factor SR Nagar! The stylists are very polite and take their time to understand exactly what you want. My haircut was perfect. Will keep coming back!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">DL</div><div><strong>Divya Lakshmi</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <!-- Duplicates for infinite loop -->
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Had a great experience at this salon! The staff is professional and welcoming. Special thanks to Vasu Bhai for his excellent service — he really understands what suits you and delivers perfectly. Highly recommended!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">KN</div><div><strong>Keshav Nagpal</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"I had wonderful experience with staff and ambience is too good. The salon is very clean and well-maintained. Must visit for anyone in SR Nagar area!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">RT</div><div><strong>Ravi Teja</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Very good satisfaction with price and better service. The team here knows exactly what they're doing. Got my hair colored and it turned out amazing!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">SR</div><div><strong>Sneha Reddy</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Budget friendly salon with excellent quality work. Got my keratin done here and the results lasted months. Sandeep and his team are really skilled professionals."</blockquote>
+                    <div class="rev-author"><div class="rev-av">AK</div><div><strong>Arun Kumar</strong><span>Local Guide · Google</span></div></div>
+                </div>
+                <div class="rev-card" data-cursor-interact>
+                    <div class="rev-stars">★★★★★</div>
+                    <blockquote>"Amazing experience at Hair Factor SR Nagar! The stylists are very polite and take their time to understand exactly what you want. My haircut was perfect. Will keep coming back!"</blockquote>
+                    <div class="rev-author"><div class="rev-av">DL</div><div><strong>Divya Lakshmi</strong><span>Verified Guest · Google</span></div></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem;">
+            <a href="review/index.html" class="btn-primary" data-cursor-interact style="display:inline-flex;">
+                Leave Us a Review
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════ INSTAGRAM REELS ══════ -->
+    <section class="reels-section" id="reels">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Instagram</span>
+                <h2 class="sec-title reveal d1">See Our Work in Action</h2>
+                <p class="sec-desc reveal d2">Real transformations, straight from our Instagram.</p>
+            </div>
+
+            <!--
+                ┌──────────────────────────────────────────────────────┐
+                │  INSTAGRAM REELS CONFIG                              │
+                │  To replace with MP4 files later:                    │
+                │  1. Add a <video> tag inside .reel-media             │
+                │  2. Remove the <iframe>                              │
+                │  3. The JS at the bottom handles autoplay/pause      │
+                └──────────────────────────────────────────────────────┘
+            -->
+            <div class="reels-grid reveal">
+                <!-- Reel 1 -->
+                <a href="https://www.instagram.com/reel/DYHz-2fJU3m/" target="_blank" rel="noopener" class="reel-card" data-cursor-interact>
+                    <div class="reel-media">
+                        <iframe src="https://www.instagram.com/reel/DYHz-2fJU3m/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="reel-overlay">
+                        <svg class="reel-ig-icon" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Watch on Instagram</span>
+                    </div>
+                </a>
+
+                <!-- Reel 2 -->
+                <a href="https://www.instagram.com/reel/DYFNI8dJmdG/" target="_blank" rel="noopener" class="reel-card" data-cursor-interact>
+                    <div class="reel-media">
+                        <iframe src="https://www.instagram.com/reel/DYFNI8dJmdG/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="reel-overlay">
+                        <svg class="reel-ig-icon" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Watch on Instagram</span>
+                    </div>
+                </a>
+
+                <!-- Reel 3 -->
+                <a href="https://www.instagram.com/reel/DZSNyopJncf/" target="_blank" rel="noopener" class="reel-card" data-cursor-interact>
+                    <div class="reel-media">
+                        <iframe src="https://www.instagram.com/reel/DZSNyopJncf/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="reel-overlay">
+                        <svg class="reel-ig-icon" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Watch on Instagram</span>
+                    </div>
+                </a>
+
+                <!-- Reel 4 -->
+                <a href="https://www.instagram.com/reel/Db2uKmqJlu7/" target="_blank" rel="noopener" class="reel-card" data-cursor-interact>
+                    <div class="reel-media">
+                        <iframe src="https://www.instagram.com/reel/Db2uKmqJlu7/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="reel-overlay">
+                        <svg class="reel-ig-icon" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Watch on Instagram</span>
+                    </div>
+                </a>
+
+                <!-- Reel 5 -->
+                <a href="https://www.instagram.com/reel/DZ66WPfJX_A/" target="_blank" rel="noopener" class="reel-card" data-cursor-interact>
+                    <div class="reel-media">
+                        <iframe src="https://www.instagram.com/reel/DZ66WPfJX_A/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="reel-overlay">
+                        <svg class="reel-ig-icon" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Watch on Instagram</span>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn-outline" data-cursor-interact style="display:inline-flex;align-items:center;gap:8px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    Follow Us on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ BOOKING & LOCATION ══════ -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="sec-head">
+                <span class="sec-label reveal">Reserve Your Visit</span>
+                <h2 class="sec-title reveal d1">Book Your Appointment</h2>
+                <p class="sec-desc reveal d2">Pick services from the menu, choose your date & time, and confirm.</p>
+            </div>
+
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div class="book-card reveal">
+                    <h3>Reserve Your Session</h3>
+                    <p class="book-sub">Select services, choose your date & time, and confirm.</p>
+
+                    <div class="book-body">
+                        <div class="fb">
+                            <label>Selected Services:</label>
+                            <div class="selected-box" id="selectedServicesSummary">
+                                <p class="ph-text">Add services from the menu above ↑</p>
+                            </div>
+                        </div>
+
+                        <div class="fb">
+                            <label>Select Date:</label>
+                            <div class="date-row" id="dateScrollContainer"></div>
+                        </div>
+                        <div class="fb">
+                            <label>Select Time:</label>
+                            <div class="time-grid" id="timeSlotsContainer">
+                                <p class="ph-text">Pick a date first</p>
+                            </div>
+                        </div>
+                        <form id="salonBookingForm" onsubmit="return false;">
+                            <div class="fb-split">
+                                <div class="ff"><label for="userName">Full Name *</label><input type="text" id="userName" required placeholder="e.g. Rahul Kumar" data-cursor-interact></div>
+                                <div class="ff"><label for="userPhone">Mobile *</label><input type="tel" id="userPhone" required placeholder="9876543210" pattern="^[0-9\-\+\s]{10,15}$" data-cursor-interact></div>
+                            </div>
+                            <div class="ff"><label for="userNotes">Special Requests</label><textarea id="userNotes" rows="2" placeholder="Allergies, reference images..." data-cursor-interact></textarea></div>
+                            <button type="submit" class="btn-submit" id="submitBookingBtn" disabled data-cursor-interact>Confirm Appointment</button>
+                        </form>
+                    </div>
+
+                    <!-- Success -->
+                    <div class="book-success" id="successOverlay">
+                        <div class="bs-inner">
+                            <div class="bs-check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none"/><path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+                            <h4>Appointment Confirmed!</h4>
+                            <p>Your booking receipt:</p>
+                            <div class="receipt">
+                                <p><strong>Booking ID:</strong> <span id="receiptId">HF-00000</span></p>
+                                <p><strong>Services:</strong> <span id="receiptServices">—</span></p>
+
+                                <p><strong>When:</strong> <span id="receiptWhen">—</span></p>
+                                <p><strong>Est. Total:</strong> <span id="receiptPrice">₹0</span></p>
+                            </div>
+                            <button class="btn-reset" id="resetBookingBtn" data-cursor-interact>Done & Book Another</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="loc-card reveal d1">
+                    <span class="loc-tag">Find Us</span>
+                    <h3>Visit Our Salon</h3>
+                    <p class="loc-branch">Hair Factor Salon, SR Nagar</p>
+
+                    <div class="loc-items">
+                        <div class="loc-item"><span class="li-icon">📍</span><div><strong>Address</strong><p>Beside Persis Cafe, Srinivasa Nagar, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p></div></div>
+                        <div class="loc-item"><span class="li-icon">📞</span><div><strong>Phone</strong><p><a href="tel:+919177892616" class="accent-link" data-cursor-interact>+91 9177892616</a></p></div></div>
+                        <div class="loc-item"><span class="li-icon">⏰</span><div><strong>Hours</strong><p>Open Daily: 9 AM – 10 PM</p></div></div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Hair+Factor+Salon+Beside+Persis+Cafe+Srinivasa+Nagar+Sanjeeva+Reddy+Nagar+Hyderabad+500038" target="_blank" rel="noopener" class="btn-directions" data-cursor-interact>🗺️ Get Directions on Google Maps</a>
+
+                    <div class="loc-map">
+                        <iframe title="Hair Factor Salon SR Nagar Location" src="https://maps.google.com/maps?q=Hair+Factor+Salon+Beside+Persis+Cafe+Srinivasa+Nagar+Sanjeeva+Reddy+Nagar+Hyderabad+Telangana+500038&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════ FOOTER ══════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="ft-brand">
+                    <a href="#home" class="nav-brand"><span class="brand-name">HAIR <span>FACTOR</span></span><span class="brand-sub">UNISEX SALON · SR NAGAR</span></a>
+                    <p>Premium styling, beauty treatments, and spa care. Serving 155+ happy clients in SR Nagar with dedicated craftsmanship and care.</p>
+                    <div class="ft-gmb"><span class="trust-stars">★★★★★</span> 4.8 Rating (155+ Reviews)</div>
+                </div>
+                <div class="ft-col">
+                    <h4>Contact</h4>
+                    <a href="tel:+919177892616" data-cursor-interact>📞 +91 9177892616</a>
+                    <span>📍 Srinivasa Nagar, SR Nagar</span>
+                    <span>⏰ Daily 9 AM – 10 PM</span>
+                </div>
+                <div class="ft-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home" data-cursor-interact>Home</a>
+                    <a href="#transformation" data-cursor-interact>Results</a>
+                    <a href="#menu" data-cursor-interact>Prices</a>
+                    <a href="#booking" data-cursor-interact>Book Now</a>
+                    <a href="privacy.html" data-cursor-interact>Privacy Policy</a>
+                    <a href="terms.html" data-cursor-interact>Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Hair Factor Unisex Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
